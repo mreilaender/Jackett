@@ -60,7 +60,7 @@ namespace Jackett.Common.Utils.Clients
                     Credentials = creds
                 };
             }
-            else if (serverConfig.ProxyType == ProxyType.Socks4 || serverConfig.ProxyType == ProxyType.Socks5)
+            else if (serverConfig.ProxyType == ProxyType.Socks4 || serverConfig.ProxyType == ProxyType.Socks5 || serverConfig.ProxyType == ProxyType.Socks5h)
             {
                 // in case of error in DNS resolution, we use a fake proxy to avoid leaking the user IP (disabling proxy)
                 // https://github.com/Jackett/Jackett/issues/8826
