@@ -5,6 +5,7 @@ namespace Jackett.Common.Models.Config
         Disabled = -1,
         Http,
         Socks4,
-        Socks5
+        Socks5,
+        Socks5h
     }
 }
